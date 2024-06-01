@@ -8,184 +8,250 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
+
     <section id="home" class="h-screen">
+
         <!-- Navbar  -->
-        <nav class="flex flex-row gap-2 bg-white p-3.5">
-            <div class="w-8/12">
-                <img class="w-20 border-radius-10" src="assets/Logo.jpeg" alt="No img" />
+        <nav id="nav" class="flex flex-row gap-2 p-3">
+            <div class="w-9/12">
+                <img class="ml-3 w-20 border-radius-10" src="assets/Logo.jpeg" alt="No img" />
             </div>
-            <ul
-                class="flex flex-row text-decoration-none gap-5 start-end justify-center items-center"
-            >
-                <li class="border-2 px-5 py-1">About</li>
-                <li class="border-2 px-5 py-1">Projects</li>
-                <li class="border-2 px-5 py-1">Certificates</li>
-                <li class="border-2 px-5 py-1">Contact</li>
+            <ul class="flex flex-row text-decoration-none gap-5 start-end justify-center items-center">
+                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#About">About</a></li>
+                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#Projects">Projects</a></li>
+                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#Certificates">Certificates</a></li>
+                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Introduction Component -->
-        <section class="flex flex-row items-center justify-between px-44 mt-36">
+        <section id="intro" class="flex flex-row items-center justify-center mx-auto mt-36">
+<!--        <section class="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen">-->
         <!--  Main Section with other 2-->
-        <section class="border-2 w-4/6">
+        <section class="w-4/6">  <!--border-2 -->
             <div class="mx-10">
-            <p class="font-extrabold text-6xl mt-7">Hi, I am Anshul</p>
-            <p class="font-extrabold text-6xl text-blue-600">Cloud Engineer!</p>
-            <!-- <p>AI Developer!</p> -->
-            <!-- <p>Frontend Developer!</p> -->
-            <p class="mt-10 font-semibold">
-                I am a Cloud Engineer / Front-End / AI Developer. <br />
-                I am pursuing Bachelors in Computer Science & Engineering.
-            </p>
+                <span class="font-extrabold text-6xl mt-7">Hi, I am Anshul</span> <br>
+                <span id="typewriter-text" class="font-extrabold text-6xl text-blue-600" style="height: 75px;"></span>
+                <!-- <p>AI Developer!</p> -->
+                <!-- <p>Frontend Developer!</p> -->
+                <p class="mt-5 font-semibold">
+    <!--                I am a Cloud Engineer, Front-End Developer, and AI Developer <br> currently pursuing a Bachelor's degree in Computer Science and Engineering.-->
+                Dynamic Cloud Engineer, Front-End Developer, and AI enthusiast. <br>
+                Currently pursuing a Bachelor's degree in Computer Science & Engineering.
+                </p>
 
-            <ul class="flex flex-row gap-5 mt-7 mb-7">
-                <li>
-                <a href="https://www.linkedin.com/in/anshul-gada-366a32213/">
-                    <img
-                    class="transition-transform duration-300 transform hover:scale-125"
-                    width="40"
-                    src="assets/linkedin.svg"
-                    alt=""
-                    />
-                </a>
-                </li>
+                <ul class="flex flex-row gap-5 mt-7 mb-7">
+                    <li>
+                    <a href="https://www.linkedin.com/in/anshul-gada-366a32213/">
+                        <img
+                        class="transition-transform duration-300 transform hover:scale-125"
+                        width="40"
+                        src="assets/linkedin.svg"
+                        alt=""
+                        />
+                    </a>
+                    </li>
 
-                <li>
-                <a href="https://www.github.com/Anshulgada/">
-                    <img
-                    class="transition-transform duration-300 transform hover:scale-125"
-                    width="40"
-                    src="assets/git.svg"
-                    alt=""
-                /></a>
-                </li>
+                    <li>
+                    <a href="https://www.github.com/Anshulgada/">
+                        <img
+                        class="transition-transform duration-300 transform hover:scale-125"
+                        width="40"
+                        src="assets/git.svg"
+                        alt=""
+                        />
+                    </a>
+                    </li>
 
-                <li>
-                <a href="https://www.instagram.com/anshul_gada/">
-                    <img
-                    class="transition-transform duration-300 transform hover:scale-125"
-                    width="40"
-                    src="assets/insta.svg"
-                    alt=""
-                /></a>
-                </li>
-            </ul>
-            <div class="mx-22 mb-7">
-                <button
-                class="bg-blue-600 px-8 py-3 rounded-xl hover:bg-blue-500 text-lg"
-                type="submit"
-                >
-                Resume
-                </button>
-            </div>
+                    <li>
+                    <a href="https://www.instagram.com/anshul_gada/">
+                        <img
+                        class="transition-transform duration-300 transform hover:scale-125"
+                        width="40"
+                        src="assets/insta.svg"
+                        alt=""
+                    /></a>
+                    </li>
+                </ul>
+                <div class="mx-22 mb-7">
+                    <a href="/Resume.pdf" target="_blank">
+                        <button
+                            class="bg-blue-600 px-16 py-3 rounded-md hover:bg-blue-500 text-lg text-white font-medium">
+                            Resume
+                        </button>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section
-            class="border-2 w-2/6 flex items-center justify-between self-center"
-        >
+            class="w-2/6 flex items-center justify-between self-center"> <!--border-2-->
             <img class="" width="500" src="assets/Programmer-cuate.svg" alt="" />
         </section>
-        </section>
+
+      </section>
         
     </section>
+
     <!-- About Component -->
-    <section class="flex flex-col px-28 h-screen">
-      <h1 class="text-center font-extrabold text-6xl ">About</h1>
-      <h2 class="text-blue-600 font-extrabold mx-20 text-2xl">
-        A bit about me
-      </h2>
-      <p class="flex mx-20 justify-between mb-20">
-        I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.
-      </p>
-      <p class="text-blue-600 font-extrabold mx-20 text-2xl">
-        Technologies and Tools
-      </p>
-      <p class="flex mx-20 justify-between mb-10">
-        Using a combination of cutting-edge technologies and reliable
-        open-source software I build user-focused, performant apps and websites
-        for smartphones, tablets, and desktops.
-      </p>
+    <section id="About" class="b-bg flex flex-col px-28 h-screen">
 
-      <div class="flex flex-wrap mt-8 flex flex-wrap justify-between px-20">
-        
-        <div
-          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1; transform: none"
-        >
-          <img
-            alt=""
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
-            class="w-12"
-          />
-          <h4 class="text-md ml-4">C Language</h4>
-        </div>
-        <div
-          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1; transform: none"
-        >
-          <img
-            alt=""
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
-            class="w-12"
-          />
-          <h4 class="text-md ml-4">C Language</h4>
-        </div>
-        <div
-          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1; transform: none"
-        >
-          <img
-            alt=""
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
-            class="w-12"
-          />
-          <h4 class="text-md ml-4">C Language</h4>
-        </div>
-        <div
-          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1; transform: none"
-        >
-          <img
-            alt=""
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
-            class="w-12"
-          />
-          <h4 class="text-md ml-4">C Language</h4>
-        </div>
-        <div
-          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1; transform: none"
-        >
-          <img
-            alt=""
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
-            class="w-12"
-          />
-          <h4 class="text-md ml-4">C Language</h4>
-        </div>
+        <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">About</h1>
 
-      </div>
+        <h2 class="text-blue-600 font-bold mx-36 text-4xl mt-10">
+          A bit about me
+        </h2>
+        <p class="mx-36 mt-2 mb-10 text-xl text-justify">
+          I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production,
+          implementation of wireframes and design flows into high performance software applications.
+          I take into consideration the user experience while writing reusable and efficient code.
+          I passionately combine good design, technology, and innovation in all my projects,
+          which I like to accompany from the first idea to release. Currently, I'm focused on the backend development.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-10 mx-36 text-4xl">
+          Technologies and Tools
+        </p>
+        <p class="mx-36 mt-2 mb-10 text-xl text-justify">
+          Using a combination of cutting-edge technologies and reliable
+          open-source software I build user-focused, performant apps and websites
+          for smartphones, tablets, and desktops.
+        </p>
+
+        <div class="flex flex-wrap mt-8 flex flex-wrap justify-between px-20 mx-28">
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1;"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Python</h4>
+        </div>
+          <div
+         class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1;">          <!-- transition-transform duration-300 ease-in-out hover:scale-125-->
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Java</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">C Language</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">MongoDB</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Postman</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Html</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">CSS</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Tailwind CSS</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Git</h4>
+        </div>
+          <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">Photoshop</h4>
+        </div>
+        </div>
 
     </section>
+
     <!-- Projects -->
-    <section class="flex flex-col bg-gray-300 h-screen">
-      <h1 class="text-center font-extrabold text-6xl">Projects</h1>
+    <section id="Projects" class="p-bg bg-gray-200 flex flex-col h-screen">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">Projects</h1>
     </section>
 
     <!-- Certificates Section -->
-    <section class="flex flex-col h-screen">
-      <h1 class="text-center font-extrabold text-6xl">Certificates</h1>
+    <section id="Certificates" class="b-bg bg-gray-200 flex flex-col h-screen">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">Certificates</h1>
     </section>
 
     <!-- Contact -->
-    <section class="flex flex-col bg-gray-300 h-screen">
-      <h1 class="text-center font-extrabold text-6xl">Contact</h1>
+    <section id="Contact" class=" p-bg bg-gray-200 flex-col h-screen">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">Contact</h1>
     </section>
 
+  <script src="typewriter.js"></script>
   </body>
 </html>

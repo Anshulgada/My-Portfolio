@@ -11,10 +11,53 @@
     filter: blur(100px);
 } */
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide vertical scrollbar */
+body {
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+    background: transparent;  /* Optional: Set background color to match body */
+}
+
 #home{
     background-image: url('assets/Gradient.svg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+#intro{
+    padding-top: 5rem;
+    padding-left: 20rem; /* 320px */
+    padding-right: 20rem; /* 320px */
+}
+
+#nav{
+    /*background-color: #FFFDED;*/
+    /*background-color: #DCEDFF;*/
+    /*background-color: #9DD1F1;*/
+    /*opacity: 90%;*/
+}
+
+/*.p-bg{*/
+/*    background-color: #e5c2df;*/
+/*}*/
+
+/*.b-bg{*/
+/*    background-color: #c9d7f5;*/
+/*}*/
+
+#typewriter-text {
+    display: inline-block;
+    vertical-align: top; /* Ensure alignment with the text above */
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap; /* Prevent wrapping of text */
 }
 
