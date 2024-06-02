@@ -70,3 +70,7 @@ body::-webkit-scrollbar {
     mix-blend-mode: darken;
     transform: scale(1.3); /* Scale image to 110% */
 }
+
+.card{
+    background-color: #c9d7f5;
+}
