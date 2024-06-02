@@ -8,125 +8,169 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="icon" href="Fav.ico" type="image/x-icon" />
   </head>
 
   <body>
-
     <section id="home" class="h-screen">
+      <!-- Navbar  -->
+      <nav id="nav" class="flex flex-row gap-2 p-3 bg-[#F4F4F8] bg-opacity-50">
+        <div class="w-9/12">
+          <img
+            id="Logo"
+            class="ml-3 w-20 border-radius-10"
+            src="assets/Favicon1.jpeg"
+            alt="No img"
+          />
+        </div>
+        <ul
+          class="flex flex-row text-decoration-none gap-5 start-end justify-center items-center"
+        >
+          <li
+            class="block py-2 px-3 font-semibold text-black hover:bg-blue-500 hover:text-white rounded-md"
+          >
+            <a href="#About">About</a>
+          </li>
+          <li
+            class="block py-2 px-3 font-semibold text-black hover:bg-blue-500 hover:text-white rounded-md"
+          >
+            <a href="#Projects">Projects</a>
+          </li>
+          <li
+            class="block py-2 px-3 font-semibold text-black hover:bg-blue-500 hover:text-white rounded-md"
+          >
+            <a href="#Certificates">Certificates</a>
+          </li>
+          <li
+            class="block py-2 px-3 font-semibold text-black hover:bg-blue-500 hover:text-white rounded-md"
+          >
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- Navbar  -->
-        <nav id="nav" class="flex flex-row gap-2 p-3">
-            <div class="w-9/12">
-                <img class="ml-3 w-20 border-radius-10" src="assets/Logo.jpeg" alt="No img" />
-            </div>
-            <ul class="flex flex-row text-decoration-none gap-5 start-end justify-center items-center">
-                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#About">About</a></li>
-                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#Projects">Projects</a></li>
-                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#Certificates">Certificates</a></li>
-                <li class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Introduction Component -->
-        <section id="intro" class="flex flex-row items-center justify-center mx-auto mt-36">
-<!--        <section class="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen">-->
+      <!-- Introduction Component -->
+      <section
+        id="intro"
+        class="flex flex-row items-center justify-center mx-auto mt-36"
+      >
+        <!--        <section class="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen">-->
         <!--  Main Section with other 2-->
-        <section class="w-4/6">  <!--border-2 -->
-            <div class="mx-10">
-                <span class="font-extrabold text-6xl mt-7">Hi, I am Anshul</span> <br>
-                <span id="typewriter-text" class="font-extrabold text-6xl text-blue-600" style="height: 75px;"></span>
-                <!-- <p>AI Developer!</p> -->
-                <!-- <p>Frontend Developer!</p> -->
-                <p class="mt-5 font-semibold">
-    <!--                I am a Cloud Engineer, Front-End Developer, and AI Developer <br> currently pursuing a Bachelor's degree in Computer Science and Engineering.-->
-                Dynamic Cloud Engineer, Front-End Developer, and AI enthusiast. <br>
-                Currently pursuing a Bachelor's degree in Computer Science & Engineering.
-                </p>
+        <section class="w-4/6">
+          <!--border-2 -->
+          <div class="mx-10">
+            <span class="font-extrabold text-6xl mt-7">Hi, I am Anshul</span>
+            <br />
+            <span
+              id="typewriter-text"
+              class="font-extrabold text-6xl text-blue-600"
+              style="height: 75px"
+            ></span>
+            <!-- <p>AI Developer!</p> -->
+            <!-- <p>Frontend Developer!</p> -->
+            <p class="mt-5 font-semibold">
+              <!--                I am a Cloud Engineer, Front-End Developer, and AI Developer <br> currently pursuing a Bachelor's degree in Computer Science and Engineering.-->
+              Dynamic Cloud Engineer, Front-End Developer, and AI enthusiast.
+              <br />
+              Currently pursuing a Bachelor's degree in Computer Science &
+              Engineering.
+            </p>
 
-                <ul class="flex flex-row gap-5 mt-7 mb-7">
-                    <li>
-                    <a href="https://www.linkedin.com/in/anshul-gada-366a32213/">
-                        <img
-                        class="transition-transform duration-300 transform hover:scale-125"
-                        width="40"
-                        src="assets/linkedin.svg"
-                        alt=""
-                        />
-                    </a>
-                    </li>
+            <ul class="flex flex-row gap-5 mt-7 mb-7">
+              <li>
+                <a href="https://www.linkedin.com/in/anshul-gada-366a32213/">
+                  <img
+                    class="transition-transform duration-300 transform hover:scale-125"
+                    width="40"
+                    src="assets/linkedin.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
 
-                    <li>
-                    <a href="https://www.github.com/Anshulgada/">
-                        <img
-                        class="transition-transform duration-300 transform hover:scale-125"
-                        width="40"
-                        src="assets/git.svg"
-                        alt=""
-                        />
-                    </a>
-                    </li>
+              <li>
+                <a href="https://www.github.com/Anshulgada/">
+                  <img
+                    class="transition-transform duration-300 transform hover:scale-125"
+                    width="40"
+                    src="assets/git.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
 
-                    <li>
-                    <a href="https://www.instagram.com/anshul_gada/">
-                        <img
-                        class="transition-transform duration-300 transform hover:scale-125"
-                        width="40"
-                        src="assets/insta.svg"
-                        alt=""
-                    /></a>
-                    </li>
-                </ul>
-                <div class="mx-22 mb-7">
-                    <a href="https://github.com/Anshulgada/My-Portfolio/raw/main/Resume.pdf" target="_blank">
-                        <button
-                            class="bg-blue-600 px-16 py-3 rounded-md hover:bg-blue-500 text-lg text-white font-medium">
-                            Resume
-                        </button>
-                    </a>
-                </div>
+              <li>
+                <a href="https://www.instagram.com/anshul_gada/">
+                  <img
+                    class="transition-transform duration-300 transform hover:scale-125"
+                    width="40"
+                    src="assets/insta.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+            <div class="mx-22 mb-7">
+              <a
+                href="https://github.com/Anshulgada/My-Portfolio/raw/main/Resume.pdf"
+                target="_blank"
+              >
+                <button
+                  class="bg-blue-600 px-16 py-3 rounded-md hover:bg-blue-500 text-lg text-white font-medium"
+                >
+                  Resume
+                </button>
+              </a>
             </div>
+          </div>
         </section>
 
-        <section
-            class="w-2/6 flex items-center justify-between self-center"> <!--border-2-->
-            <img class="" width="500" src="assets/Programmer-cuate.svg" alt="" />
+        <section class="w-2/6 flex items-center justify-between self-center">
+          <!--border-2-->
+          <img class="" width="500" src="assets/Programmer-cuate.svg" alt="" />
         </section>
-
       </section>
-        
     </section>
 
     <!-- About Component -->
     <section id="About" class="b-bg flex flex-col px-28 h-screen">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">
+        About
+      </h1>
 
-        <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">About</h1>
+      <h2 class="text-blue-600 font-bold mx-36 text-4xl mt-10">
+        A bit about me
+      </h2>
+      <p class="mx-36 mt-2 mb-10 text-xl text-justify">
+        I'm a self-taught web developer and Mobile App Developer with experience
+        in designing new features from ideation to production, implementation of
+        wireframes and design flows into high performance software applications.
+        I take into consideration the user experience while writing reusable and
+        efficient code. I passionately combine good design, technology, and
+        innovation in all my projects, which I like to accompany from the first
+        idea to release. Currently, I'm focused on the backend development.
+      </p>
 
-        <h2 class="text-blue-600 font-bold mx-36 text-4xl mt-10">
-          A bit about me
-        </h2>
-        <p class="mx-36 mt-2 mb-10 text-xl text-justify">
-          I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production,
-          implementation of wireframes and design flows into high performance software applications.
-          I take into consideration the user experience while writing reusable and efficient code.
-          I passionately combine good design, technology, and innovation in all my projects,
-          which I like to accompany from the first idea to release. Currently, I'm focused on the backend development.
-        </p>
+      <p class="text-blue-600 font-bold mt-10 mx-36 text-4xl">
+        Technologies and Tools
+      </p>
+      <p class="mx-36 mt-2 mb-10 text-xl text-justify">
+        Using a combination of cutting-edge technologies and reliable
+        open-source software I build user-focused, performant apps and websites
+        for smartphones, tablets, and desktops.
+      </p>
 
-        <p class="text-blue-600 font-bold mt-10 mx-36 text-4xl">
-          Technologies and Tools
-        </p>
-        <p class="mx-36 mt-2 mb-10 text-xl text-justify">
-          Using a combination of cutting-edge technologies and reliable
-          open-source software I build user-focused, performant apps and websites
-          for smartphones, tablets, and desktops.
-        </p>
-
-        <div class="flex flex-wrap mt-8 flex flex-wrap justify-between px-20 mx-28">
-          <div
+      <div
+        class="flex flex-wrap mt-8 flex flex-wrap justify-between px-20 mx-28"
+      >
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1;"
+          style="opacity: 1"
         >
           <img
             alt=""
@@ -135,9 +179,11 @@
           />
           <h4 class="text-md ml-4">Python</h4>
         </div>
-          <div
-         class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
-          style="opacity: 1;">          <!-- transition-transform duration-300 ease-in-out hover:scale-125-->
+        <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+          style="opacity: 1"
+        >
+          <!-- transition-transform duration-300 ease-in-out hover:scale-125-->
           <img
             alt=""
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
@@ -145,7 +191,7 @@
           />
           <h4 class="text-md ml-4">Java</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -156,7 +202,7 @@
           />
           <h4 class="text-md ml-4">C Language</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -167,7 +213,7 @@
           />
           <h4 class="text-md ml-4">MongoDB</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -178,7 +224,7 @@
           />
           <h4 class="text-md ml-4">Postman</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -189,7 +235,7 @@
           />
           <h4 class="text-md ml-4">Html</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -200,7 +246,7 @@
           />
           <h4 class="text-md ml-4">CSS</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -211,7 +257,7 @@
           />
           <h4 class="text-md ml-4">Tailwind CSS</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -222,7 +268,7 @@
           />
           <h4 class="text-md ml-4">Git</h4>
         </div>
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
           style="opacity: 1; transform: none"
         >
@@ -234,7 +280,7 @@
           <h4 class="text-md ml-4">Photoshop</h4>
         </div>
 
-          <div
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40 justify-evenly"
           style="opacity: 1; transform: none"
         >
@@ -244,8 +290,19 @@
             class="w-12"
           />
           <h4 class="text-md ml-4">Pycharm</h4>
-          </div>
-          <div
+        </div>
+        <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40 justify-evenly"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">MySQL</h4>
+        </div>
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40 justify-evenly"
           style="opacity: 1; transform: none"
         >
@@ -255,8 +312,8 @@
             class="w-12"
           />
           <h4 class="text-md ml-4">IntelliJ</h4>
-          </div>
-          <div
+        </div>
+        <div
           class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40 justify-evenly"
           style="opacity: 1; transform: none"
         >
@@ -266,26 +323,191 @@
             class="w-12"
           />
           <h4 class="text-md ml-4">PhpStorm</h4>
-          </div>
         </div>
-
+        <div
+          class="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40 justify-evenly"
+          style="opacity: 1; transform: none"
+        >
+          <img
+            alt=""
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datagrip/datagrip-original.svg"
+            class="w-12"
+          />
+          <h4 class="text-md ml-4">DataGrip</h4>
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
-    <section id="Projects" class="p-bg bg-gray-200 flex flex-col h-screen">
-      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">Projects</h1>
+    <section id="Projects" class="p-bg flex flex-col h-screen">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">
+        Projects
+      </h1>
+
+      <div class="container mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-28 mt-20 justify-items-center">
+          <div
+            class="max-w-sm p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Pothole Detection System
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="max-w-sm p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Telegram Bot
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="max-w-sm p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Keylogger
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="max-w-sm p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Python Automation Scripts
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Certificates Section -->
-    <section id="Certificates" class="b-bg bg-gray-200 flex flex-col h-screen">
-      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">Certificates</h1>
+    <section id="Certificates" class="b-bg flex flex-col h-screen">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">
+        Certificates
+      </h1>
     </section>
 
     <!-- Contact -->
-    <section id="Contact" class=" p-bg bg-gray-200 flex-col h-screen">
-      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">Contact</h1>
+    <section id="Contact" class="p-bg flex flex-col">
+      <h1 class="text-center font-extrabold text-7xl mt-10 text-blue-600">
+        Contact
+      </h1>
     </section>
 
-  <script src="typewriter.js"></script>
+    <script src="typewriter.js"></script>
   </body>
 </html>
